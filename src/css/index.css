@@ -1,15 +1,20 @@
 body {
  margin:0
 }
+.bd{height:100%;width:100%;position:fixed;background: #0d1117;}
 .avt{
-    height:50px;width:50px;
+    height:50px;width:50px;padding:0px;margin: 0 auto;
 }
 .home{
-    min-height: 200px;max-width:500px;margin-top:10px;justify-content: center;margin:0px auto;
+    min-height: 200px;max-width:500px;justify-content: center;margin:0px auto;margin-top:20px;color:white;width:98%;
 }
 .cover{
-margin:0px auto;
+margin:0px auto;min-height:200px;min-width:300px;background: #171818;padding:10px 15px;width:98%;max-width:350px;font-family: Arial, Helvetica, sans-serif;margin-top:10px;
 }
 .holder{
-    width:100px;height:100px;border:1px solid;
+    width:100px;min-height:100px;border:1px solid;
 }
+.inp{
+    width:95%;border-radius: 5px;padding:10px;height:30px;outline-color: #58a6ff;border:1px solid
+}
+.btn1{width: 95%;background:green;color:white;border-radius:5px;text-align: center;height:30px;line-height: 30px;}

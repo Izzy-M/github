@@ -1,15 +1,28 @@
+import {useState} from 'react';
 import './../css/index.css';
-import logo from './../css/git.png';
+import logo from './../css/git1.png';
 function Index() {
-  return (
-    <div className="home card">
-      <div className="row justify-content-center" >
-      <div style={{height:'50px',width:'50px'}}><img className='avt' src={logo}/></div>
-      <p style={{textAlign:'center',fontFamily:'helvetica',fontSize:'18px'}}><span><h1>Sign In to Github</h1></span></p>
-      </div>
+  const [useState,setuser]=['',''];
 
-      <div className="card cover"></div>
-     
+  return (
+    <div className='bd'>
+    <div className="home">
+      <div className="row justify-content-center mt-2" >
+      <p><div className='row justify-content-center'><div className='card rounded-circle' style={{height:'50px',width:'50px',padding:'0px',marginTop:'15px',backgroundImage:`url(${logo})`,backgroundSize:'cover'}}></div></div></p></div><div>
+      <p style={{textAlign:'center',fontFamily:'helvetica',fontSize:'16px',marginTop:'10px'}}><span><h5>Sign In to Github</h5></span></p>
+      </div>
+      <div className="card cover">
+        <form onSubmit={()=>{}}>
+        <p>Username or email address<br/>
+        <input className='inp' type='text' value={useState}/></p>
+        <p><span style={{float:'left'}}>Password</span> <span style={{float:'right'}}><a href='' style={{textDecoration:'none',color:'#58a6ff',cursor:'pointer'}}>Forgot password</a></span><br/>
+        <input className='inp' type="password" value={useState}/>
+        </p>
+        <p><div className="btn1" onClick={()=>{}}>Sign In</div></p>
+        </form>
+      </div>
+      <div className='card d-flex row' style={{minHeight:'40px',minWidth:'300px',margin:'0px auto',maxWidth:'350px',marginTop:'30px',background:'#000',lineHeight:'30px',padding:'10px'}}><div className="row no-gutters justify-content-center">New to Github? <span style={{textDecoration:'none',color:'#58a6ff',cursor:'pointer'}}>Create Account</span></div></div>
+    </div>
     </div>
   );
 }
