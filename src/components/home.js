@@ -8,7 +8,7 @@ function Index() {
     <div className='bd'>
     <div className="home">
       <div className="row justify-content-center mt-2" >
-      <p><div className='row justify-content-center'><div className='card rounded-circle' style={{height:'50px',width:'50px',padding:'0px',marginTop:'15px',backgroundImage:`url(${logo})`,backgroundSize:'cover'}}></div></div></p></div><div>
+      <p><div className='row justify-content-center'><div className='card rounded-circle' style={{height:'50px',width:'50px',padding:'0px',marginTop:'15px',backgroundImage:`url(${logo})`,backgroundSize:'cover',objectPosition:'fit'}}></div></div></p></div><div>
       <p style={{textAlign:'center',fontFamily:'helvetica',fontSize:'16px',marginTop:'10px'}}><span><h5>Sign In to Github</h5></span></p>
       </div>
       <div className="card cover">
@@ -21,7 +21,7 @@ function Index() {
         <p><div className="btn1" onClick={()=>{}}>Sign In</div></p>
         </form>
       </div>
-      <div className='card d-flex row' style={{minHeight:'40px',minWidth:'300px',margin:'0px auto',maxWidth:'350px',marginTop:'30px',background:'#000',lineHeight:'30px',padding:'10px'}}><div className="row no-gutters justify-content-center">New to Github? <span style={{textDecoration:'none',color:'#58a6ff',cursor:'pointer'}}>Create Account</span></div></div>
+      <div className='card d-flex row text-center' style={{minHeight:'60px',minWidth:'300px',margin:'0px auto',maxWidth:'350px',marginTop:'40px',background:'#000',lineHeight:'30px',padding:'10px'}}><div>New to Github? <a href='' style={{textDecoration:'none',color:'#58a6ff',cursor:'pointer'}}>Create Account</a></div></div>
     </div>
     </div>
   );
